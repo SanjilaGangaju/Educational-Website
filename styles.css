@@ -48,7 +48,7 @@ li{
 .container{
     max-width: 80rem;
     margin: 0 auto;
-    padding: 1.6rem 2.2rem;
+    padding: 8.6rem 2.4rem;
 }
 .grid{
     display: grid;
@@ -138,6 +138,7 @@ li{
 
 /***** hero Section *****/ 
 main{
+    position: relative;
     background-image: linear-gradient(to top right, #3d86fa, 
     #4484fb, #679eff, #b3d2ff, #ebf3fe);
 }
@@ -162,11 +163,33 @@ main{
     }
     & .hero-para{
         color: var(--white-color);
-        margin: 2rem 0 4rem 0;
+        margin: 3rem 0 4rem 0;
     }
 }
 .section-hero--image img{
     width: 100%;
     height: auto;
+    background: transparent;
+}
+/* shape divider */
+.custom-shape-divider-bottom-1751969465 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1751969465 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.custom-shape-divider-bottom-1751969465 .shape-fill {
+    fill: #FFFFFF;
 }
  /***** End hero Section *****/
