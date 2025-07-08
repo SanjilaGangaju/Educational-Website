@@ -48,7 +48,7 @@ li{
 .container{
     max-width: 80rem;
     margin: 0 auto;
-    padding: 9.6rem 2.4rem;
+    padding: 5rem 2.4rem;
 }
 .grid{
     display: grid;
@@ -58,6 +58,9 @@ li{
 }
 .grid-three--cols{
     grid-template-columns: repeat(3, 1fr);
+}
+.grid-four--cols{
+    grid-template-columns: repeat(4, 1fr);
 }
 
 /* module / reusable */
@@ -250,4 +253,40 @@ main{
     gap: 6.4rem;
 }
   /***** End About Section *****/
+ /***** explore course Section *****/
+.courses-div{
+    padding: 1.3rem 1.3rem;
+    
+    text-align: center;
+   
+    &:hover{
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        -ms-border-radius: 1.2rem;
+        -o-border-radius: 1.2rem;
+        box-shadow: var(--btn-box-shadow);
+}
+}
+.courses-div img{
+    padding: 0.4rem 1.7rem;
+    background-color: var(--supporting-color);
+    width: 9rem;
+    height: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.section-course .grid{
+    gap: 6.9rem;
+}
+   /***** End explore course Section *****/
+
  
