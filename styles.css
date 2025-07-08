@@ -20,6 +20,7 @@ p, li, a{
     letter-spacing: 0.1rem;
     font-weight: 400;
     color: var(--para-color);
+    line-height: 1.5;
 }
 a{
     text-decoration: none;
@@ -36,6 +37,11 @@ li{
     --bg-color: #ffffff;
     --heading-color: #000a19;
     --para-color: #504e4d;
+    --hero-heading-color: #003b99;
+    --white-color: #ffffff;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
 /* layout */
@@ -44,14 +50,38 @@ li{
     margin: 0 auto;
     padding: 1.6rem 2.2rem;
 }
+.grid{
+    display: grid;
+}
+.grid-two--cols{
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 /* module / reusable */
+.btn{
+    display: inline-block;
+    padding: 1.2rem 3.2rem;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+    
 
+}
 
 
 /* states */
 
+.btn:hover{
+    background-color: var(--btn-hover-bg-color);
+    cursor: pointer;
+    box-shadow: var(--btn-box-shadow);
+
+}
 /***** navbar Section *****/
 .section-navbar{
      width: 100%;
@@ -104,3 +134,39 @@ li{
 }
 
   /***** End navbar Section *****/
+
+
+/***** hero Section *****/ 
+main{
+    background-image: linear-gradient(to top right, #3d86fa, 
+    #4484fb, #679eff, #b3d2ff, #ebf3fe);
+}
+.section-hero .grid{
+    align-items: center;
+    gap: 6.4rem;
+    
+    & .hero-subheading{
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 1.7rem;
+        word-spacing: .2rem;
+        color: var(--btn-hover-bg-color);
+        font-weight: 700;
+    }
+    & .hero-heading{
+        font-size: 5.8rem;
+        font-family: 'Jost';
+        color: var(--hero-heading-color);
+        font-weight: 700;
+        line-height: 1.5;
+    }
+    & .hero-para{
+        color: var(--white-color);
+        margin: 2rem 0 4rem 0;
+    }
+}
+.section-hero--image img{
+    width: 100%;
+    height: auto;
+}
+ /***** End hero Section *****/
