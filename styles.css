@@ -14,11 +14,36 @@ html {
 h1, h2, h3, h4, h5, h6{
   font-family: 'Poppins', sans-serif;
 }
+p, li, a{
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color: var(--para-color);
+}
+a{
+    text-decoration: none;
 
+}
+li{
+    list-style: none;
+}
 /* theme */
-
+:root{
+    --main-color: #0062ff;
+    --supporting-color: #ebf3fe;
+    --font-color: #424242;
+    --bg-color: #ffffff;
+    --heading-color: #000a19;
+    --para-color: #504e4d;
+}
 
 /* layout */
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 1.6rem 2.2rem;
+}
 
 
 /* module / reusable */
@@ -28,5 +53,54 @@ h1, h2, h3, h4, h5, h6{
 /* states */
 
 /***** navbar Section *****/
+.section-navbar{
+     width: 100%;
+     box-shadow: 0 0 10px grey;
+}
+
+.section-navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    
+    & .navbar-brand img{
+        width: 12rem;
+        height: 6.9rem;
+       
+}
+}
+.section-navbar .navbar ul{
+    display: flex;
+    gap: 3.2rem;
+    
+    
+    & li a{
+        color: var(--heading-color);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.6rem;
+        display: inline-block;
+        position: relative;
+        
+        &::after{
+            content:"";
+            position: absolute;
+            left: 0;
+            bottom: -0.3rem;
+            width: 0%;
+            border-bottom: .2rem solid var(--main-color);
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+}
+    }
+    & li a:hover:after{
+        width: 100%;
+    }
+    
+}
 
   /***** End navbar Section *****/
