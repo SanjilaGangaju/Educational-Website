@@ -40,6 +40,7 @@ li{
     --hero-heading-color: #003b99;
     --white-color: #ffffff;
     --btn-hover-bg-color: #003b99;
+    --footer-bg--color: #040d12;
     --btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
@@ -441,13 +442,17 @@ main{
     min-height: 30rem;
     margin: 0 auto;
     box-shadow: var(--btn-box-shadow);
-    margin-bottom: 5rem;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     padding: 0 3.2rem;
+    position: relative;
+    bottom: -7rem;
+    z-index: 1;
+    background-color: var(--white-color);
+    
 
     & .grid
     {
@@ -479,4 +484,58 @@ main{
 }
 
  /***** End contact home Section *****/
+ /***** footer Section *****/ 
+footer{
+    background-color: var(--footer-bg--color);
+    padding-top:  7rem;
+}
+footer *{
+    color: white;
+}
+.footer-subheading{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+ .section-footer .grid{
+    
+    
+    text-align: right;
+ }
+ .footer-1--div p{
+    margin: 1rem 0 3.2rem 0;
+ }
+ .social-footer--icons {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem
+ }
+ .footer-1--div {
+    text-align: left;
+    & .fa-brands{
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: var(--supporting-color);
+        color: var(--btn-hover-bg-color);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s linear;
+        
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        &:hover{
+            color: var(--supporting-color);
+            background-color: var(--btn-hover-bg-color);
+            rotate: 360deg;
+        }
+}
+ }
+ /***** End footer Section *****/
  
