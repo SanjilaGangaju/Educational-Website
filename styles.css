@@ -34,7 +34,7 @@ li{
     --main-color: #0062ff;
     --supporting-color: #ebf3fe;
     --font-color: #424242;
-    --bg-color: #ffffff;
+    --bg-color: #f7fcff;
     --heading-color: #000a19;
     --para-color: #504e4d;
     --hero-heading-color: #003b99;
@@ -50,6 +50,15 @@ li{
     margin: 0 auto;
     padding: 5rem 2.4rem;
 }
+.section-why--choose .container:first-child,
+.section-contact--homepage .container:first-child,
+.section-about .container:first-child,
+.section-blog:first-child,
+.section-course .container:first-child
+{
+    padding: 2.4rem 0 2.4rem 0;
+}
+
 .grid{
     display: grid;
 }
@@ -292,7 +301,9 @@ main{
         box-shadow: var(--btn-box-shadow);
 }
 }
-
+.section-course{
+    background-color: var(--bg-color);
+}
 .section-course .grid{
     gap: 3.2rem;
 }
@@ -323,6 +334,7 @@ main{
     
     
 }
+
 .courses-div:nth-child(4) .icon .fa-solid {
     
      color: #d988b9;
@@ -331,7 +343,7 @@ main{
    /***** End explore course Section *****/
 
  /***** why choose us Section *****/ 
- .section-why--choose{}
+
  .section-why--choose .text-align-right .why-choose--div{
     display: flex;
     flex-direction: column;
@@ -390,8 +402,8 @@ main{
     
 }
 .choose-center--div figure::before{
-    animation: circle 5s linear infinte;
-    -webkit-animation: circle 5s linear infinte;
+    animation: circle 5s linear infinite;
+    -webkit-animation: circle 5s linear infinite;
 }
 @keyframes circle{
     0%{
@@ -423,4 +435,48 @@ main{
     margin-top: 3.2rem;
 }
   /***** End why choose us Section *****/
+ /***** contact home Section *****/ 
+.section-contact--homepage{
+    width: 60%;
+    min-height: 30rem;
+    margin: 0 auto;
+    box-shadow: var(--btn-box-shadow);
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: 0 3.2rem;
+
+    & .grid
+    {
+        align-items: center;
+        gap: 6.2rem;
+        justify-content: center;
+    }
+    
+.contact-title{
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+.contact-content p{
+    margin: 1.2rem 0 2.4rem 0;
+}
+}.section-contact--homepage img{
+    width: 100%;
+    height: 25rem;
+
+}
+.section-contact--homepage a{
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+.section-contact--homepage .fa-solid{
+    padding: 0;
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+
+ /***** End contact home Section *****/
  
