@@ -436,6 +436,39 @@ main{
     margin-top: 3.2rem;
 }
   /***** End why choose us Section *****/
+
+  /***** Blog Section *****/  
+  .section-blog{
+    background-color: var(--bg-color);
+  }
+  .blog img{
+    width: 100%;
+  }
+  .blog-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+    & .fa-solid{
+        background-color: var(--white-color);
+        padding: 0;
+        margin-right: 0.9rem;
+    }
+    
+  }
+  .blog-content{
+    padding: 1.2rem 2rem;
+  }
+  .section-blog .container .blog{
+    background-color: var(--white-color);
+    box-shadow: var(--btn-box-shadow);
+  }
+  .section-blog  .grid{
+    gap: 10rem;
+  }
+
+  /***** End Blog Section *****/
+  
  /***** contact home Section *****/ 
 .section-contact--homepage{
     width: 60%;
