@@ -387,11 +387,28 @@ main{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     z-index: -1;
+    
+}
+.choose-center--div figure::before{
     animation: circle 5s linear infinte;
     -webkit-animation: circle 5s linear infinte;
 }
-@keyframes circle {
-    
+@keyframes circle{
+    0%{
+        background-color: #b3d0ff;
+    }
+    25%{
+        background-color: #80b1ff;
+    }
+    50%{
+        background-color: #4d91f1;
+    }
+    75%{
+        background-color: #99c0ff;
+    }
+    100%{
+        background-color: #3381ff;
+    }
 }
 .choose-center--div figure::after{
     width: 45rem;
