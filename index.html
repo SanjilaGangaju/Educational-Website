@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TECH CLUB</title>
+    <meta name="description" content="Welcome to Stech Hub, your gateway to knowledge and skill development. We are dedicated to providing high-quality, accessible education for learners of all ages and backgrounds.">
+    <meta name="keywords" content="stechhub, html course, programming, mern, education">
+    <meta name="robots" content="index, follow">
+    <title>HOME - TECH CLUB</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- ========== Start NAVBAR Section ========== -->
@@ -30,7 +34,7 @@
     <!-- ========== End NAVBAR Section ========== -->
     <!-- ========== Start HERO Section ========== -->
     <main>
-        <div class="section-hero">
+        <div class="section-hero"  data-aos="fade-up">
           <div class="container grid grid-two--cols">
             <div class="section-hero--content">
                <p class="hero-subheading">EMPOWERING LIFELONG LEARNING</p>
@@ -79,7 +83,7 @@
                 </h3>
                 <p>We start by learning what you need. We look at what's new and exciting in learning and choose topics that match what what you want to learn.</p>
             </div>
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up"  data-aos-delay="300">
                 <div class="icon">
                     <img src="/assests/design.png" alt="stech hub design ">
                 </div>
@@ -88,7 +92,7 @@
                 </h3>
                 <p>Next, we make the lessons. We make them fun and interesting for you. We make sure they work for different ways people like to learn.</p>
             </div>
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" data-aos-delay="600" >
                 <div class="icon">
                     <img src="/assests/develop.png" alt="stech hub develop ">
                 </div>
@@ -196,14 +200,14 @@
                     </h3>
                     <p>Learn from experienced teachers who are passionate about sharing knowledge and guiding you toward succcess in your learning journey.</p>
                 </div>
-                  <div class="why-choose--div">
+                  <div class="why-choose--div" data-aos="zoom-in"  data-aos-delay="300">
                     <p class="common-text--highlight">2</p>
                     <h3 class="section-common--title">
                         Interactive Lessons
                     </h3>
                     <p>Engage in hands-on learning experiences that make education fun and memorable. Interactive lessons encourage active participation and deeper understanding</p>
                 </div>
-                  <div class="why-choose--div">
+                  <div class="why-choose--div" data-aos="zoom-in"  data-aos-delay="600">
                     <p class="common-text--highlight">3</p>
                     <h3 class="section-common--title">
                         Lifelong Learning Support
@@ -221,21 +225,21 @@
 
            <!-- ? right side of content -->
             <div class="choose-right--div text-align-left">
-                <div class="why-choose--div">
+                <div class="why-choose--div" data-aos="zoom-in"  data-aos-delay="300">
                     <p class="common-text--highlight">4</p>
                     <h3 class="section-common--title">
                         Flexible & Self-Paced Learning
                     </h3>
                     <p>Learn at your own pace with 24/7 access to all courses, making it easy to study anytime, anywhere, based on your schedule and convenience.</p>
                 </div>
-                 <div class="why-choose--div">
+                 <div class="why-choose--div data-aos="zoom-in"  data-aos-delay="600"">
                     <p class="common-text--highlight">5</p>
                     <h3 class="section-common--title">
                         Affordable & Accessible
                     </h3>
                     <p>Access high-quality education at a low cost, with free resources and scholarships available to ensure learning is within everyone's reach.</p>
                 </div>
-                 <div class="why-choose--div">
+                 <div class="why-choose--div" data-aos="zoom-in"  data-aos-delay="900">
                     <p class="common-text--highlight">6</p>
                     <h3 class="section-common--title">
                         Recognized Certifications
@@ -320,7 +324,10 @@
     </footer>
 
     <!-- ========== End FOOTERSection ========== -->
-    
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     
 </body>
 </html>
