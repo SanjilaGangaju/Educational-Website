@@ -144,11 +144,11 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 0;
+    padding: 1.2rem 2.4rem;
     
     & .navbar-brand img{
-        width: 10rem;
-        height: 6.9rem;
+        width: 11rem;
+        height: 9.9rem;
        
 }
 }
@@ -674,11 +674,20 @@ footer *{
     html{
         font-size: 54%;
     }
+    :is(.section-why--choose,
+         .section-contact--homepage,
+         .section-about,
+         .section-blog,
+         .section-course,)
+        .grid{
+              gap: 0rem;
+            } 
     
  }
 @media (width <= 998px){
     .section-hero{
         height: auto;
+        padding-bottom: 9rem;
         & .grid-two--cols{
             grid-template-columns: 1fr;
 
@@ -689,15 +698,85 @@ footer *{
                 order: 1;
 
                 & img{
-                    width: 40%;
+                    width: 60%;
                 }
             }
         }
     }
+    .section-about .about-div{
+        text-align: left;
+    }
+    .section-footer .grid{
+        text-align: left;
+       }
+    footer .grid-four--cols {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+
+       
+       
+
+
+        & .footer-1--div{
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+            margin-top: 3.4rem;
+            
+        }
+    }
+
+}
+@media (width <=1100px) {
+    .section-course .grid-four--cols{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .section-why--choose {
+        & .choose-left--div{
+            order: 2;
+        }
+        & .choose-right--div{
+            order: 3;
+        }
+        & .choose-center--div {
+               order: 1;
+            & figure::before{
+                width: 0;
+                height: 0;
+                padding: 0;
+                background-color: transparent;
+            }
+             & figure::after{
+                width: 0;
+                height: 0;
+                padding: 0;
+                background-color: transparent;
+            }
+        }
+    }
+    
 }
  @media (width <= 768px) {
-    .grid-two--cols, .grid-three--cols, .grid-four--cols{
+    .grid-two--cols, .grid-three--cols{
         grid-template-columns: 1fr;
+    }
+    .section-navbar .container{
+        display: flex;
+        flex-direction: column;
+         & .navbar ul{
+            gap: 2.4rem;
+         }
+    }
+    .section-hero .grid .hero-heading{
+        font-size: 3.8rem;
+    }
+    .section-why--choose{
+        & img{
+            width: 70%;
+        }
+        & .text-align-right .why-choose--div {
+            
+             align-items: start;
+            text-align: left;
+          }
     }
     
  }
